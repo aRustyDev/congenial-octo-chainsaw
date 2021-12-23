@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="HAT-Dual-Quad-SATA_files/analytics.js"></script><script async="" src="HAT-Dual-Quad-SATA_files/load_002.php"></script>
+<meta charset="UTF-8">
+<title>Dual Quad SATA HAT - Radxa Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.3">
+<link rel="shortcut icon" href="https://wiki.radxa.com/radxa_x_64.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.radxa.com/mw/opensearch_desc.php" title="Radxa Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.radxa.com/mw/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Radxa Wiki Atom feed" href="https://wiki.radxa.com/mw/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/load.css">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/bootstrap-green.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/screen.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/theme.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/jquery-ui.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/font.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/typography.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/misc.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/menu.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/menu-blue.css" media="screen">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/social-buttons.css" media="screen"><style>
+ul.bss{position:relative;list-style:none;padding:0;margin:0;overflow:hidden;display:none}li.bss-slide{position:absolute;display:none}ul.bss-controls{list-style:none;margin:0;padding:0;z-index:9999;margin-top:5px;display:none}ul.bss-controls.v-centered li a{position:absolute}ul.bss-controls.v-centered li.bss-next a{right:0;background:#fff;padding:5px}ul.bss-controls.v-centered li.bss-prev a{left:0;background:#fff;padding:5px}ol.bss-markers{list-style:none;padding:0;margin:0;width:100%;display:none}ol.bss-markers.h-centered{text-align:center;margin-top:11px}ol.bss-markers li{display:inline}ol.bss-markers li a{padding:5px 10px;background:none repeat scroll 0% 0% #000;color:#FFF;margin:5px;text-decoration:none;margin-top:5px}ol.bss-markers li a:hover{background:none repeat scroll 0% 0% #999}p.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5;size:24;color:#000}h2.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.7}h3.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}h4.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:7d2cc887121ffe243a0bd2f0b3cedae4 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(https://wiki.radxa.com/mw/resources/src/mediawiki.action/images/green-checkmark.png?2014-08-27T21:45:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:a71b6527faa0851bef5cf6359dbfd5c1 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="HAT-Dual-Quad-SATA_files/load_002.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:055353e9ed091aa075288819bb455ad1 */</style>
+<script src="HAT-Dual-Quad-SATA_files/cbgapi.html" async=""></script><script type="text/javascript" async="" src="HAT-Dual-Quad-SATA_files/shopifystore.js"></script><script type="text/javascript" async="" src="HAT-Dual-Quad-SATA_files/ga.js"></script><script src="HAT-Dual-Quad-SATA_files/load.php"></script><script src="HAT-Dual-Quad-SATA_files/load_003.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dual_Quad_SATA_HAT","wgTitle":"Dual Quad SATA HAT","wgCurRevisionId":5655,"wgRevisionId":5655,"wgArticleId":700,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Dual_Quad_SATA_HAT","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"bootstraphalcyon","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250
+,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-js:7:39521c0c6f731732e1b5f897f7fb5d15 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="HAT-Dual-Quad-SATA_files/load_004.php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-ini {line-height: normal;}
+.source-ini li, .source-ini pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for ini
+ * CSS class: source-ini, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.ini.source-ini .de1, .ini.source-ini .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.ini.source-ini  {font-family:monospace;}
+.ini.source-ini .imp {font-weight: bold; color: red;}
+.ini.source-ini li, .ini.source-ini .li1 {font-weight: normal; vertical-align:top;}
+.ini.source-ini .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.ini.source-ini .li2 {font-weight: bold; vertical-align:top;}
+.ini.source-ini .co0 {color: #666666; font-style: italic;}
+.ini.source-ini .sy0 {color: #000066; font-weight:bold;}
+.ini.source-ini .st0 {color: #933;}
+.ini.source-ini .re0 {color: #000066; font-weight:bold;}
+.ini.source-ini .re1 {color: #000099;}
+.ini.source-ini .re2 {color: #660066;}
+.ini.source-ini .ln-xtra, .ini.source-ini li.ln-xtra, .ini.source-ini div.ln-xtra {background-color: #ffc;}
+.ini.source-ini span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mw/skins/bootstrapskin/csshover.min.htc")}</style><![endif]--><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2992653-31']);
+  _gaq.push(['_setDomainName', 'mediawikibootstrapskin.co.uk']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script type="text/javascript">
+  var ShopifyStoreConfig = {shop:"radxa.myshopify.com", collections:[11863785]};
+  (function() {
+	  	      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; 
+			  		      s.src = "//widgets.shopifyapps.com/assets/shopifystore.js";
+			  		      var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+						  			    })();  
+  </script>
+	  <noscript>Please enable javascript, or <a href="http://radxa.myshopify.com">click here</a> to visit my <a href="http://www.shopify.com/tour/ecommerce-website">ecommerce web site</a> powered by Shopify.</noscript><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Dual_Quad_SATA_HAT skin-bootstrapskin action-view" style="display: block;">
+<div id="userbar" class="bg-cyan">
+  <div class="body">
+      <div class="col-md-12 hidden-xs hidden-sm">
+      <ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
+	    <li><a href="https://wiki.radxa.com/Home"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="https://wiki.radxa.com/news"><i class="fa fa-rss"></i>News</a></li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-bars"></i>Products</a>
+			<div class="grid-container3">
+			<ul>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/zero">Zero</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/zero"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/zero/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/zero/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/zero/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/zero/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rock3">ROCK 3</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rock3"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rock3/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/CM3"><i class="fa fa-laptop"></i>Compute Module</a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpi4">ROCK Pi 4</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpi4"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpi4/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiS">ROCK Pi S</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiS"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiS/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiE">ROCK Pi E</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiE"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiE/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiX">ROCK Pi X</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiX"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiX/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiN10">ROCK Pi N10</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/accessories">Accessories</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/PoE_HAT"><i class="fa fa-arrow-up"></i>PoE HAT</a></li>
+				 			<li><a href="https://wiki.radxa.com/SATA_HAT"><i class="fa fa-arrow-up"></i>SATA HAT</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="https://wiki.radxa.com/Buy"><i class="fa fa-shopping-cart"></i>Buy</a>
+			<div class="grid-container3">
+			<ul>
+				<!--<li><a href="#shopify-store"><i class="fa fa-plane"></i>Radxa Store</a></li> -->
+				<li><a href="https://wiki.radxa.com/Buy"><i class="fa fa-truck"></i>Distributors</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-users"></i>Community</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="http://forum.radxa.com/"><i class="fa fa-comments"></i>Forum</a></li>
+				<li><a href="http://github.com/radxa"><i class="fa fa-github"></i>Github</a></li>
+			</ul>
+			</div>
+		</li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-envelope"></i>Contact</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="https://wiki.radxa.com/Special:SpecialContact"><i class="fa fa-mail-reply-all"></i>Contact us</a></li>
+				<li><a href="https://wiki.radxa.com/about"><i class="fa fa-user"></i>About Radxa</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true"><a href="javascript:void(0)"><i class="fa fa-pencil-square"></i>Edit</a>
+			<div class="grid-container3">
+				<ul>
+        		<li>
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+		  
+			<a href="#"><i class="fa fa-question"></i> Personal</a>
+				<div class="grid-container3">
+					<ul>
+					<li id="pt-createaccount"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Dual+Quad+SATA+HAT&amp;type=signup">Create account</a></li><li id="pt-login"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Dual+Quad+SATA+HAT" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>					</ul>
+				</div>	  
+          
+<!-- /0 -->
+</li>
+        		<li aria-haspopup="true">
+<!-- 0 -->
+          <a href="#"><i class="fa fa-book"></i> Page</a>
+				<div class="grid-container3">
+				<ul>
+              
+                                                                                        
+                <li id="ca-nstab-main" class="selected"><a href="https://wiki.radxa.com/Dual_Quad_SATA_HAT" title="View the content page [alt-shift-c]" accesskey="c" tabindex="-1">Page</a></li><li id="ca-talk" class="new"><a href="https://wiki.radxa.com/mw/index.php?title=Talk:Dual_Quad_SATA_HAT&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t" tabindex="-1">Discussion</a></li><li id="ca-viewsource"><a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e" tabindex="-1">View source</a></li><li id="ca-history" class="collapsible"><a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h" tabindex="-1">History</a></li></ul></div>
+		    	  
+		  
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				</ul>
+			</div>
+		</li>
+		<li class="right search">					
+					<form class="navbar-search" action="/mw/index.php" id="searchform">					
+						<div class="input">
+							<button type="submit" class="button">Go</button>
+							<input id="searchInput" type="search" accesskey="f" title="Special:Search" placeholder="Search" name="search" autocomplete="off">
+						</div>					
+					</form>
+		</li>				
+		<li aria-haspopup="true">
+<!-- 0 -->
+              <a href="#"><i class="fa fa-wrench"></i> Tools</a>
+              <div class="grid-container3">
+              <ul>
+                <li id="t-info"><a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;action=info">Page information</a></li><li id="t-permalink"><a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;oldid=5655" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-print"><a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li class="divider"></li><li id="t-specialpages"><a href="https://wiki.radxa.com/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-recentchangeslinked"><a href="https://wiki.radxa.com/Special:RecentChangesLinked/Dual_Quad_SATA_HAT" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li class="divider"></li><li id="t-whatlinkshere"><a href="https://wiki.radxa.com/Special:WhatLinksHere/Dual_Quad_SATA_HAT" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>				
+            </ul>
+			</div>
+			
+			</li>
+		  
+          </ul>
+
+            
+		   
+          
+<!-- /0 -->
+
+	
+       
+	  
+        
+<!-- 0 -->
+         
+         
+<!-- /LANGUAGES -->
+		
+      </div>
+	  </div>
+
+      <div class="pull-right">
+              </div>
+  </div>
+      
+<!-- 0 -->
+
+<!-- /0 -->
+
+      
+ 
+
+
+    <div id="mw-page-base" class="noprint"></div>
+    <div id="mw-head-base" class="noprint"></div>
+
+    <!-- Header -->
+    <div id="page-header" class="container-fluid signed-out">
+      <div class="col-md-4 pull-left">
+
+                        <ul class="nav logo-container" role="navigation"><li id="p-logo"><a href="https://wiki.radxa.com/Home" title="Visit the main page"><img src="HAT-Dual-Quad-SATA_files/radxa_logo.png" alt="Radxa Wiki" style="width:90%"></a></li><li></li></ul>
+	  
+	  </div>
+    </div>
+
+    
+    
+    <!-- content -->
+    <section id="content" class="mw-body container-fluid 0">
+      <div id="top"></div>
+      <div id="mw-js-message" style="display:none;"></div>
+            <!-- bodyContent -->
+      <div id="bodyContent">
+                        <!-- jumpto -->
+        <div id="jump-to-nav" class="mw-jump">
+          Jump to: <a href="#mw-head">navigation</a>,
+          <a href="#p-search">search</a>
+        </div>
+        <!-- /jumpto -->
+                
+        <!-- innerbodycontent -->
+                  <div id="innerbodycontent" class="row nolayout"><div class="offset1 span10">
+            <h1 id="firstHeading" class="firstHeading page-header">
+              <span dir="auto">Dual Quad SATA HAT</span>
+            </h1>
+            <!-- subtitle -->
+            <div id="contentSub"></div>
+            <!-- /subtitle -->
+                        <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="hf-nsheader"></div><div class="hf-header"></div><div class="col-md-12">
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <strong class="selflink">English</strong></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT/zh_cn&amp;action=edit&amp;redlink=1" class="new" title="Dual Quad SATA HAT/zh cn (page does not exist)">中文（中国大陆）‎</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT/es_es&amp;action=edit&amp;redlink=1" class="new" title="Dual Quad SATA HAT/es es (page does not exist)">español</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT/de_DE&amp;action=edit&amp;redlink=1" class="new" title="Dual Quad SATA HAT/de DE (page does not exist)">Deutsch</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT/pt_BR&amp;action=edit&amp;redlink=1" class="new" title="Dual Quad SATA HAT/pt BR (page does not exist)">português do Brasil</a></div>
+<div class="box-Title"></div>
+</div>
+<pre>   <a href="https://wiki.radxa.com/Home" title="Home"> Home</a> &gt; <a href="https://wiki.radxa.com/SATA_HAT" title="SATA HAT"> SATA HAT</a> &gt; <strong class="selflink"> Dual/Quad SATA HAT</strong>
+</pre>
+<h3><span class="mw-headline" id="Introduction">Introduction</span></h3>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Software_support"><span class="tocnumber">2</span> <span class="toctext">Software support</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Upgrade_firmware"><span class="tocnumber">3</span> <span class="toctext">Upgrade firmware</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#NAS_support.28optional.29"><span class="tocnumber">4</span> <span class="toctext">NAS support(optional)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#OpenMediaVault"><span class="tocnumber">4.1</span> <span class="toctext">OpenMediaVault</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#RTC_support.28optional.29"><span class="tocnumber">5</span> <span class="toctext">RTC support(optional)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Supplied_with_this_product"><span class="tocnumber">6</span> <span class="toctext">Supplied with this product</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Dual_version"><span class="tocnumber">6.1</span> <span class="toctext">Dual version</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Quad_version"><span class="tocnumber">6.2</span> <span class="toctext">Quad version</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#SATA_HAT_Top_board.28Optional.29"><span class="tocnumber">6.3</span> <span class="toctext">SATA HAT Top board(Optional)</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Metal_Case.28Optional.29"><span class="tocnumber">6.4</span> <span class="toctext">Metal Case(Optional)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Other_hardware_needed"><span class="tocnumber">7</span> <span class="toctext">Other hardware needed</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Model_Number"><span class="tocnumber">8</span> <span class="toctext">Model Number</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#PINOUT"><span class="tocnumber">9</span> <span class="toctext">PINOUT</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Getting_Started"><span class="tocnumber">10</span> <span class="toctext">Getting Started</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Assemble_the_Kits"><span class="tocnumber">10.1</span> <span class="toctext">Assemble the Kits</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Full_Setup_Quad_Sata_Hat_for_Raspberry_Pi_4_NAS_Review"><span class="tocnumber">10.2</span> <span class="toctext">Full Setup Quad Sata Hat for Raspberry Pi 4 NAS Review</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Detail_of_the_HAT_board"><span class="tocnumber">10.3</span> <span class="toctext">Detail of the HAT board</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Power_Options"><span class="tocnumber">10.4</span> <span class="toctext">Power Options</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Option_1:_Powering_from_Raspberry_Pi.2FROCK_Pi_40P_GPIO_header"><span class="tocnumber">10.4.1</span> <span class="toctext">Option 1: Powering from Raspberry Pi/ROCK Pi 40P GPIO header</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Option_2:_Powering_from_USB_C_or_DC_Jack_on_SATA_HAT"><span class="tocnumber">10.4.2</span> <span class="toctext">Option 2: Powering from USB C or DC Jack on SATA HAT</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Option_3:_Powering_from_ATX_PSU"><span class="tocnumber">10.4.3</span> <span class="toctext">Option 3: Powering from ATX PSU</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Software_configuration"><span class="tocnumber">11</span> <span class="toctext">Software configuration</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#SATA_HAT_Firmware_Update"><span class="tocnumber">12</span> <span class="toctext">SATA HAT Firmware Update</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Troubleshooting"><span class="tocnumber">13</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Dimensions"><span class="tocnumber">14</span> <span class="toctext">Dimensions</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Hardware_Revision"><span class="tocnumber">15</span> <span class="toctext">Hardware Revision</span></a></li>
+</ul>
+</div>
+
+<p>ROCK Pi Dual/Quad SATA HAT is an addon HAT designed for Raspberry Pi 
+4. It utilizes the high-speed USB3 buses on Raspberry Pi 4 and providing
+ a complete NAS solution based on Raspberry Pi 4. It has the following 
+features:
+</p>
+<ul>
+<li> Up to 4x HDD/SSD, support 2.5inch or 3.5inch SSD
+</li>
+<li> Utilize two independent USB3 buses on Raspberry Pi 4
+</li>
+<li> Type C power input with USB PD support for both 2.5inch SSD and Raspberry Pi 4(v1.1 hardware)
+</li>
+<li> 12V DC power input for 2.5 and 3.5 inch HDD and Raspberry Pi 4(v1.2 hardware)
+</li>
+<li> External standard ATX power supply support for 3.5inch HDD
+</li>
+<li> Support HDD suspend mode
+</li>
+<li> Support software RAID 0/1/5
+</li>
+<li> Support USB Direct Access Mode from PC
+</li>
+<li> Optional PWM control fan for HDD heat dispatching
+</li>
+<li> Optional OLED display for IP/Storage info
+</li>
+</ul>
+<p><a href="https://wiki.radxa.com/File:Quad_sata_hat_angle.png" class="image"><img alt="Quad sata hat angle.png" src="HAT-Dual-Quad-SATA_files/500px-Quad_sata_hat_angle.png" srcset="HAT-Dual-Quad-SATA_files/750px-Quad_sata_hat_angle.png 1.5x, HAT-Dual-Quad-SATA_files/Quad_sata_hat_angle.png 2x" width="500" height="375"></a>
+</p>
+<h3><span class="mw-headline" id="Software_support">Software support</span></h3>
+<p>We provide an install script to help you get the SATA software that works in Raspberry Pi 4B.
+</p><p><a href="https://wiki.radxa.com/File:Get-rockpi-sata.png" class="image"><img alt="Get-rockpi-sata.png" src="HAT-Dual-Quad-SATA_files/Get-rockpi-sata.png" width="734" height="611"></a>
+</p>
+<pre>curl -sL <a rel="nofollow" class="external free" href="https://rock.sh/get-rockpi-sata">https://rock.sh/get-rockpi-sata</a> | sudo -E bash -
+</pre>
+<p>Just copy the command above and paste it into the terminal and press 
+enter. If you want more settings, check out section  Software 
+Configuration at the bottom of the page.
+</p>
+<h3><span class="mw-headline" id="Upgrade_firmware">Upgrade firmware</span></h3>
+<p>1. <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/how-to-upgrade-f-w-with-jms561-under-raspberry-pi/3560">How to upgrade F/W with jms561 under Raspberry Pi</a>
+</p><p>2. <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/how-to-upgrade-f-w-with-jms561-under-windows/4437">How to upgrade F/W with jms561 under Windows</a> (recommend)
+</p>
+<h3><span class="mw-headline" id="NAS_support.28optional.29">NAS support(optional)</span></h3>
+<h5><span class="mw-headline" id="OpenMediaVault">OpenMediaVault</span></h5>
+<p>Install: <a rel="nofollow" class="external text" href="https://github.com/OpenMediaVault-Plugin-Developers/docs/blob/master/Adden-B-Installing_OMV5_on_an%20R-PI.pdf">Installing OMV5 on Raspberry PI's</a>
+</p><p>Troubleshooting: 
+</p><p>1. <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/quad-sata-kit-and-openmediavault-5-raspberry-pi-4/3193">OMV WebUI only shows two HDD's</a>
+</p><p>This is likely because JMicron controllers incorrectly report 
+identical serial numbers and other data which confuses various systems.
+</p><p>You can “fix” this by adding a rule to /lib/udev/rules.d/60-persistent-storage.rules <b>after</b> the entry for <b>“Fall back usb_id for USB devices”</b>:
+</p>
+<pre>   # Fix Quad SATA HAT disk serial number
+   KERNEL=="sd*", ATTRS{idVendor}=="1058", ATTRS{idProduct}=="0a10", 
+SUBSYSTEMS=="usb", PROGRAM="/root/serial.sh&nbsp;%k", 
+ENV{ID_SERIAL}="USB-%c", ENV{ID_SERIAL_SHORT}="%c"
+</pre>
+<p>You will also need to create <b>/root/serial.sh</b> containing the following:
+</p>
+<pre>   #!/bin/bash
+   /sbin/hdparm -I /dev/$1 | grep 'Serial Number' | awk '{print $3}'
+</pre>
+<p><br>
+And you need to add execute permission to the file via the following:
+</p>
+<pre>   chmod +x /root/serial.sh
+</pre>
+<p><br>
+Finally, install the hdparm.
+</p>
+<pre>   sudo apt-get install hdparm
+</pre>
+<p>This will ensure that unique paths are created based on the serial number of the actual drives and not the hat.
+</p>
+<h3><span class="mw-headline" id="RTC_support.28optional.29">RTC support(optional)</span></h3>
+<p>In version 1.2, we added RTC functionality. If you want to use the 
+RTC, you will need to install a battery (socket next to the fan). For 
+Raspbian, you can do this to enable RTC:
+</p><p>Add <b>dtoverlay=i2c-rtc,pcf8563</b> to the /boot/config.txt and reboot. Execute <b>sudo hwclock -w</b> after reboot.
+</p><p><a href="https://wiki.radxa.com/File:Rtc-battery.jpeg" class="image"><img alt="Rtc-battery.jpeg" src="HAT-Dual-Quad-SATA_files/400px-Rtc-battery.jpeg" srcset="HAT-Dual-Quad-SATA_files/600px-Rtc-battery.jpeg 1.5x, HAT-Dual-Quad-SATA_files/800px-Rtc-battery.jpeg 2x" width="400" height="200"></a>
+</p>
+<h3><span class="mw-headline" id="Supplied_with_this_product">Supplied with this product</span></h3>
+<h4><span class="mw-headline" id="Dual_version">Dual version</span></h4>
+<ul>
+<li> ROCK Pi Dual SATA HAT
+</li>
+<li> Mechanical spacers
+</li>
+<li> 2x USB 3.0 connection adapter *1
+</li>
+<li> CPU heatsink with fan(DF4 version only)
+</li>
+</ul>
+<h4><span class="mw-headline" id="Quad_version">Quad version</span></h4>
+<ul>
+<li> ROCK Pi Quad SATA HAT
+</li>
+<li> Mechanical spacers
+</li>
+<li> 4x USB 3.0 connection adapter *1
+</li>
+<li> CPU heatsink with fan(DF4 version only)
+</li>
+</ul>
+<p><br>
+</p>
+<h4><span class="mw-headline" id="SATA_HAT_Top_board.28Optional.29">SATA HAT Top board(Optional)</span></h4>
+<ul>
+<li> 0.91inch OLED
+</li>
+<li> One GPIO button
+</li>
+<li> PWM controlled 40x40mm FAN
+</li>
+</ul>
+<p><a href="https://wiki.radxa.com/File:Sata_hat_top_board.png" class="image"><img alt="Sata hat top board.png" src="HAT-Dual-Quad-SATA_files/500px-Sata_hat_top_board.png" srcset="HAT-Dual-Quad-SATA_files/750px-Sata_hat_top_board.png 1.5x, HAT-Dual-Quad-SATA_files/Sata_hat_top_board.png 2x" width="500" height="341"></a>
+</p>
+<h4><span class="mw-headline" id="Metal_Case.28Optional.29">Metal Case(Optional)</span></h4>
+<ul>
+<li> Holds up to four 2.5 inch HDDs/SSDs
+</li>
+<li> Supports top board
+</li>
+<li> Top acrylic cover for OLED display
+</li>
+<li> Support fan for HDD heat dispatching air flow
+</li>
+<li> One button for powering off and OLED info switch
+</li>
+</ul>
+<p><a href="https://wiki.radxa.com/File:Quad_sata_case_coke.jpeg" class="image"><img alt="Quad sata case coke.jpeg" src="HAT-Dual-Quad-SATA_files/500px-Quad_sata_case_coke.jpeg" srcset="HAT-Dual-Quad-SATA_files/750px-Quad_sata_case_coke.jpeg 1.5x, HAT-Dual-Quad-SATA_files/Quad_sata_case_coke.jpeg 2x" width="500" height="710"></a>
+</p>
+<h3><span class="mw-headline" id="Other_hardware_needed">Other hardware needed</span></h3>
+<ul>
+<li> Proper power adapter(Check power options below for more info)
+</li>
+<li> 2.5inch or 3.5inch HDD/SSD
+</li>
+<li> Raspberry Pi 4 or ROCK Pi 4 with OS running
+</li>
+<li> optional 7+15P SATA cable(For 3.5inch HDD or extending the length)
+</li>
+</ul>
+<h3><span class="mw-headline" id="Model_Number">Model Number</span></h3>
+<p>Since the Raspberry Pi 4 changes the form factor(swapping USB and 
+RJ45), we need a different USB connection adapter. The ROCK Pi 4 shares 
+form factor with Raspberry Pi 3/3B+.  Below is the different model 
+number:
+</p>
+<table class="wikitable" border="1">
+
+<tbody><tr>
+<th> Model
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> DF4
+</td>
+<td> Dual version for Raspberry Pi 4
+</td></tr>
+<tr>
+<td> QF3
+</td>
+<td> Quad version for ROCK Pi 4, Raspberry Pi 3/3B+
+</td></tr>
+<tr>
+<td> QF4
+</td>
+<td> Quad version for Raspberry Pi 4
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="PINOUT">PINOUT</span></h3>
+<p>Pinout for 40PIN GPIO header
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th style="text-align: center;"> Description
+</th>
+<th style="text-align: center;"> Function
+</th>
+<th style="text-align: center;"> Pin#
+</th>
+<th rowspan="21">
+</th>
+<th style="text-align: center;"> Pin#
+</th>
+<th style="text-align: center;"> Function
+</th>
+<th style="text-align: center;"> Description
+</th></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 1
+</td>
+<td style="text-align: center;"> 2
+</td>
+<td style="text-align: center;"> VCC5V0_SYS
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;"> OLED I2C
+</td>
+<td style="text-align: center;"> I2C_SDA
+</td>
+<td style="text-align: center;"> 3
+</td>
+<td style="text-align: center;"> 4
+</td>
+<td style="text-align: center;"> VCC5V0_SYS
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;"> OLED I2C
+</td>
+<td style="text-align: center;"> I2C_SCL
+</td>
+<td style="text-align: center;"> 5
+</td>
+<td style="text-align: center;"> 6
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 7
+</td>
+<td style="text-align: center;"> 8
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 9
+</td>
+<td style="text-align: center;"> 10
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;"> top board key
+</td>
+<td style="text-align: center;"> GPIO4_C2
+</td>
+<td style="text-align: center;"> 11
+</td>
+<td style="text-align: center;"> 12
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> GPIO4_C6
+</td>
+<td style="text-align: center;"> 13
+</td>
+<td style="text-align: center;"> 14
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 15
+</td>
+<td style="text-align: center;"> 16
+</td>
+<td style="text-align: center;"> GPIO4_D2
+</td>
+<td style="text-align: center;"> reset OLED
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 17
+</td>
+<td style="text-align: center;"> 18
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 19
+</td>
+<td style="text-align: center;"> 20
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 21
+</td>
+<td style="text-align: center;"> 22
+</td>
+<td style="text-align: center;"> GPIO_RST1
+</td>
+<td style="text-align: center;"> reset SATA1/2
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 23
+</td>
+<td style="text-align: center;"> 24
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 25
+</td>
+<td style="text-align: center;"> 26
+</td>
+<td style="text-align: center;"> ADC_IN0
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> SDA
+</td>
+<td style="text-align: center;"> 27
+</td>
+<td style="text-align: center;"> 28
+</td>
+<td style="text-align: center;"> SCL
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 29
+</td>
+<td style="text-align: center;"> 30
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 31
+</td>
+<td style="text-align: center;"> 32
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;"> control tb-fan speed
+</td>
+<td style="text-align: center;"> PWM_33
+</td>
+<td style="text-align: center;"> 33
+</td>
+<td style="text-align: center;"> 34
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 35
+</td>
+<td style="text-align: center;"> 36
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;"> reset SATA3/4
+</td>
+<td style="text-align: center;"> GPIO_RST2
+</td>
+<td style="text-align: center;"> 37
+</td>
+<td style="text-align: center;"> 38
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr>
+<tr>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;"> 39
+</td>
+<td style="text-align: center;"> 40
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+</td></tr></tbody></table>
+<p>Pinout for 2x5 PHD 2.0mm connector
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th style="text-align: center;"> Function
+</th>
+<th style="text-align: center;"> Pin#
+</th>
+<th rowspan="6" style="text-align: center;">
+</th>
+<th style="text-align: center;"> Pin#
+</th>
+<th style="text-align: center;"> Function
+</th></tr>
+<tr>
+<td style="text-align: center;"> I2C_SDA
+</td>
+<td style="text-align: center;"> 1
+</td>
+<td style="text-align: center;"> 2
+</td>
+<td style="text-align: center;"> VCC3V3_SYS
+</td></tr>
+<tr>
+<td style="text-align: center;"> I2C_SCL
+</td>
+<td style="text-align: center;"> 3
+</td>
+<td style="text-align: center;"> 4
+</td>
+<td style="text-align: center;"> VCC5V0_SYS
+</td></tr>
+<tr>
+<td style="text-align: center;"> GPIO4_D2
+</td>
+<td style="text-align: center;"> 5
+</td>
+<td style="text-align: center;"> 6
+</td>
+<td style="text-align: center;"> GPIO4_C2
+</td></tr>
+<tr>
+<td style="text-align: center;"> GND
+</td>
+<td style="text-align: center;"> 7
+</td>
+<td style="text-align: center;"> 8
+</td>
+<td style="text-align: center;"> PWM_33
+</td></tr>
+<tr>
+<td style="text-align: center;"> GND
+</td>
+<td style="text-align: center;"> 9
+</td>
+<td style="text-align: center;"> 10
+</td>
+<td style="text-align: center;"> NC
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Getting_Started">Getting Started</span></h3>
+<h4><span class="mw-headline" id="Assemble_the_Kits">Assemble the Kits</span></h4>
+<div class="col-md-6">
+           <div class="lazyYT lazyYT-image-loaded" data-youtube-id="xz-AhmjiTu8" data-ratio="16:9" style="cursor: pointer; position: relative; height: 0px; width: 100%; padding-top: 56.25%; background: rgba(0, 0, 0, 0) url(&quot;http://img.youtube.com/vi/xz-AhmjiTu8/hqdefault.jpg&quot;) no-repeat scroll center center / cover;"><p id="lazyYT-title-xz-AhmjiTu8" class="lazyYT-title"></p><div class="lazyYT-button"></div></div> (click image to play or watch on <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=xz-AhmjiTu8&amp;feature=youtu.be">Youtube</a>)
+</div>
+<p><br>
+</p>
+<div class="clearfix"></div>
+<h4><span class="mw-headline" id="Full_Setup_Quad_Sata_Hat_for_Raspberry_Pi_4_NAS_Review">Full Setup Quad Sata Hat for Raspberry Pi 4 NAS Review</span></h4>
+<div class="col-md-6">
+           <div class="lazyYT lazyYT-image-loaded" data-youtube-id="Eix0PCB0byQ" data-ratio="16:9" style="cursor: pointer; position: relative; height: 0px; width: 100%; padding-top: 56.25%; background: rgba(0, 0, 0, 0) url(&quot;http://img.youtube.com/vi/Eix0PCB0byQ/hqdefault.jpg&quot;) no-repeat scroll center center / cover;"><p id="lazyYT-title-Eix0PCB0byQ" class="lazyYT-title"></p><div class="lazyYT-button"></div></div> (click image to play or watch on <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Eix0PCB0byQ&amp;feature=youtu.be">Youtube</a>)
+</div>
+<p><br>
+</p>
+<div class="clearfix"></div>
+<h4><span class="mw-headline" id="Detail_of_the_HAT_board">Detail of the HAT board</span></h4>
+<p><a href="https://wiki.radxa.com/File:Quad_sata_hat_ports.jpg" class="image"><img alt="Quad sata hat ports.jpg" src="HAT-Dual-Quad-SATA_files/600px-Quad_sata_hat_ports.jpg" srcset="HAT-Dual-Quad-SATA_files/900px-Quad_sata_hat_ports.jpg 1.5x, HAT-Dual-Quad-SATA_files/Quad_sata_hat_ports.jpg 2x" width="600" height="357"></a>
+</p>
+<h4><span class="mw-headline" id="Power_Options">Power Options</span></h4>
+<p>Power consumptions for typical disks:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>
+</th>
+<th> Power Consumption
+</th></tr>
+<tr>
+<td> SSD
+</td>
+<td> &lt;3W
+</td></tr>
+<tr>
+<td> 2.5 HDD
+</td>
+<td> 3 ~ 5W
+</td></tr>
+<tr>
+<td> 3.5 HDD
+</td>
+<td> 5 ~10W
+</td></tr></tbody></table>
+<p>Note: the table above is for reference, check your disk label for the exact power consumption. 
+More info can be found <a rel="nofollow" class="external text" href="https://linustechtips.com/main/topic/1062501-35-vs-25-hdd-power-consumption/">here</a>.
+</p>
+<h5><span class="mw-headline" id="Option_1:_Powering_from_Raspberry_Pi.2FROCK_Pi_40P_GPIO_header">Option 1: Powering from Raspberry Pi/ROCK Pi 40P GPIO header</span></h5>
+<p>The Raspberry Pi GPIO <a rel="nofollow" class="external text" href="https://pinout.xyz/pinout/pin2_5v_power">+5V can provide up to 1.5A power</a>, the typical SSD is <a rel="nofollow" class="external text" href="https://www.anandtech.com/show/8747/samsung-ssd-850-evo-review/10">3W power consumption</a>. So you can drive up to two SSDs directly powering from Raspberry Pi with a good 5V/5A USB C power adapter.
+</p><p>The ROCK Pi 4 GPIO +5V can provide up to 4A current. You can 
+drive four SSD/HDD directly if your power adapter can provide &gt; 35W 
+power.
+</p>
+<h5><span class="mw-headline" id="Option_2:_Powering_from_USB_C_or_DC_Jack_on_SATA_HAT">Option 2: Powering from USB C or DC Jack on SATA HAT</span></h5>
+<p><b>V1.1 SATA HAT</b>
+</p><p>For V1.1 hardware revision, we use USB C for the power input on 
+SATA HAT with PD/QC support. Same as option 1, you can choose USB PD 
+power adapter &gt; 35W to drive up to four 2.5inch HDDs and Raspberry PI
+ at the same time. 3.5inch HDD powering is not supported by the USB C 
+port.
+</p><p><b>V1.2 SATA HAT</b>
+</p><p>For V1.2, we changed the power jack on SATA HAT to 12V DC because
+ the 12V power adapter is much cheaper than the USB C PD adapter. Also, 
+users want to power 3.5inch HDD with a power adapter instead of ATX PSU.
+ The 12V DC jack is 5.5x2.1mm diameter. You need at least 12V/3A to 
+power four 2.5inch HDD and 12V/5A to power four 3.5inch HDD.
+</p>
+<h5><span class="mw-headline" id="Option_3:_Powering_from_ATX_PSU">Option 3: Powering from ATX PSU</span></h5>
+<p>If you plan to put the SATA HAT in a PC enclosure, then you can use 
+the ATX PSU. Mostly ATX PSU can meet the power requirement. You need an 
+ATX Floppy cable to power the SATA HAT and Raspberry Pi.
+</p>
+<h3><span class="mw-headline" id="Software_configuration">Software configuration</span></h3>
+<p>Just edit /etc/rockpi-sata.conf, take it effect by below command
+</p>
+<pre>sudo systemctl restart rockpi-sata.service
+</pre>
+<p>Below is the default <b>/etc/rockpi-sata.conf</b>, which you can modify according to the comments
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="ini source-ini"><ol><li class="li1"><pre class="de1"><span class="re0"><span class="br0">[</span>fan<span class="br0">]</span></span></pre></li><li class="li1"><pre class="de1"># When the temperature is above lv0 <span class="br0">(</span><span class="nu0">35</span>'C<span class="br0">)</span>, the fan at <span class="nu0">25</span>% power,</pre></li><li class="li1"><pre class="de1"># and lv1 at <span class="nu0">50</span>% power, lv2 at <span class="nu0">75</span>% power, lv3 at <span class="nu0">100</span>% power.</pre></li><li class="li1"><pre class="de1"># When the temperature is below lv0, the fan is turned off.</pre></li><li class="li2"><pre class="de2"># You can change these values if necessary.</pre></li><li class="li1"><pre class="de1"><span class="re1">lv0</span> <span class="sy0">=</span><span class="re2"> 35</span></pre></li><li class="li1"><pre class="de1"><span class="re1">lv1</span> <span class="sy0">=</span><span class="re2"> 40</span></pre></li><li class="li1"><pre class="de1"><span class="re1">lv2</span> <span class="sy0">=</span><span class="re2"> 45</span></pre></li><li class="li1"><pre class="de1"><span class="re1">lv3</span> <span class="sy0">=</span><span class="re2"> 50</span></pre></li><li class="li2"><pre class="de2">&nbsp;</pre></li><li class="li1"><pre class="de1"><span class="re0"><span class="br0">[</span>key<span class="br0">]</span></span></pre></li><li class="li1"><pre class="de1"># You can customize the function of the key, currently available functions are</pre></li><li class="li1"><pre class="de1"># slider: oled display next page</pre></li><li class="li1"><pre class="de1"># switch: fan turn on/off switch</pre></li><li class="li2"><pre class="de2"># reboot, poweroff</pre></li><li class="li1"><pre class="de1"># If you have any good suggestions for key functions, </pre></li><li class="li1"><pre class="de1"># please add an issue on https://rock.sh/rockpi-sata</pre></li><li class="li1"><pre class="de1"><span class="re1">click</span> <span class="sy0">=</span><span class="re2"> slider</span></pre></li><li class="li1"><pre class="de1"><span class="re1">twice</span> <span class="sy0">=</span><span class="re2"> switch</span></pre></li><li class="li2"><pre class="de2"><span class="re1">press</span> <span class="sy0">=</span><span class="re2"> none</span></pre></li><li class="li1"><pre class="de1">&nbsp;</pre></li><li class="li1"><pre class="de1"><span class="re0"><span class="br0">[</span>time<span class="br0">]</span></span></pre></li><li class="li1"><pre class="de1"># twice: maximum time between double clicking <span class="br0">(</span>seconds<span class="br0">)</span></pre></li><li class="li1"><pre class="de1"># press: long press time <span class="br0">(</span>seconds<span class="br0">)</span></pre></li><li class="li2"><pre class="de2"><span class="re1">twice</span> <span class="sy0">=</span><span class="re2"> 0.7</span></pre></li><li class="li1"><pre class="de1"><span class="re1">press</span> <span class="sy0">=</span><span class="re2"> 1.8</span></pre></li><li class="li1"><pre class="de1">&nbsp;</pre></li><li class="li1"><pre class="de1"><span class="re0"><span class="br0">[</span>slider<span class="br0">]</span></span></pre></li><li class="li1"><pre class="de1"># Whether the oled auto display next page and the time interval <span class="br0">(</span>seconds<span class="br0">)</span></pre></li><li class="li2"><pre class="de2"><span class="re1">auto</span> <span class="sy0">=</span><span class="re2"> true</span></pre></li><li class="li1"><pre class="de1"><span class="re1">time</span> <span class="sy0">=</span><span class="re2"> 10</span></pre></li><li class="li1"><pre class="de1">&nbsp;</pre></li><li class="li1"><pre class="de1"><span class="re0"><span class="br0">[</span>oled<span class="br0">]</span></span></pre></li><li class="li1"><pre class="de1"># Whether rotate the text of oled <span class="nu0">180</span> degrees, whether use Fahrenheit</pre></li><li class="li2"><pre class="de2"><span class="re1">rotate</span> <span class="sy0">=</span><span class="re2"> false</span></pre></li><li class="li1"><pre class="de1"><span class="re1">f-temp</span> <span class="sy0">=</span><span class="re2"> false</span></pre></li></ol></div></div>
+<h3><span class="mw-headline" id="SATA_HAT_Firmware_Update">SATA HAT Firmware Update</span></h3>
+<p>See Forum Discussion -&gt; <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/how-to-upgrade-f-w-with-jms561-under-raspberry-pi/3560">How to upgrade F/W with jms561 under Raspberry Pi</a>
+</p>
+<h3><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h3>
+<p>1. <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/quad-sata-hat-assembly-and-troubleshooting/3879">Quad SATA HAT Assembly and Troubleshooting</a>
+</p>
+<h3><span class="mw-headline" id="Dimensions">Dimensions</span></h3>
+<h3><span class="mw-headline" id="Hardware_Revision">Hardware Revision</span></h3>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.032 seconds
+Real time usage: 0.040 seconds
+Preprocessor visited node count: 149/1000000
+Preprocessor generated node count: 293/1000000
+Post‐expand include size: 731/2097152 bytes
+Template argument size: 90/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key radxa_wiki-radxa_wiki:pcache:idhash:700-0!*!0!!en!2!* and timestamp 20211222184046 and revision id 5655
+ -->
+<div class="hf-footer"></div><div class="hf-nsfooter"></div></div>          </div></div>
+                <!-- /innerbodycontent -->
+                <!-- printfooter -->
+        <div class="printfooter">
+        Retrieved from "<a href="https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;oldid=5655">https://wiki.radxa.com/mw/index.php?title=Dual_Quad_SATA_HAT&amp;oldid=5655</a>"        </div>
+        <!-- /printfooter -->
+                        <!-- catlinks -->
+        <div id="catlinks" class="catlinks catlinks-allhidden"></div>        <!-- /catlinks -->
+                        <div class="visualClear"></div>
+        <!-- debughtml -->
+                <!-- /debughtml -->
+      </div>
+      <!-- /bodyContent -->
+    </section>
+    <!-- /content -->
+
+      <!-- footer -->
+
+      <div id="footer" class="footer container-fluid custom-footer"><script type="text/javascript" src="HAT-Dual-Quad-SATA_files/plusone.js" gapi_processed="true"></script>
+<div id="footer" class="footer container-fluid">
+	<div class="col-md-12">
+<div class="footer-links">
+    <div class="container">         
+<div class="footer-Title"></div>
+<div class="col-md-4 pull-left">
+<small>Copyright©2021 Radxa Limited | 瑞莎科技</small>
+</div>
+<div class="col-md-8 pull-right">
+<ul id="siteFooterMenu" class="siteFooterMenu">
+<li><a href="https://wiki.radxa.com/">Home</a></li>
+<li><a href="https://wiki.radxa.com/Buy">Buy</a></li>
+<li><a href="http://forum.radxa.com/">Forum</a></li>
+<li><a href="https://wiki.radxa.com/Rock/download">Download</a></li>
+<li><a href="https://wiki.radxa.com/Rock/FAQ">FAQs</a></li>
+<li><a href="https://wiki.radxa.com/Special:SpecialContact">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-md-12">
+<div class="text-center" style="margin-top:20px;">
+<a rel="license" href="https://creativecommons.org/licenses/by/3.0/"></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+</div>
+</div>
+    
+</div>
+    <script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"skins.bootstrapskin":"loading","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="HAT-Dual-Quad-SATA_files/load_006.php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.BootStrapSkinSlideshow"],null,true);
+}</script>
+<script src="HAT-Dual-Quad-SATA_files/load_005.php"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43717967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":64});
+}</script>
+  
+
+</div></div></div></div><div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><style></style></body></html>

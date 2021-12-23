@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="HATs_files/analytics.js"></script><script async="" src="HATs_files/load_004.php"></script>
+<meta charset="UTF-8">
+<title>Rockpi4/hardware/HATs - Radxa Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.3">
+<link rel="shortcut icon" href="https://wiki.radxa.com/Rockpi4/radxa_x_64.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.radxa.com/mw/opensearch_desc.php" title="Radxa Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.radxa.com/mw/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Radxa Wiki Atom feed" href="https://wiki.radxa.com/mw/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="HATs_files/load_002.css">
+<link rel="stylesheet" href="HATs_files/bootstrap-green.css" media="screen">
+<link rel="stylesheet" href="HATs_files/screen.css" media="screen">
+<link rel="stylesheet" href="HATs_files/theme.css" media="screen">
+<link rel="stylesheet" href="HATs_files/jquery-ui.css" media="screen">
+<link rel="stylesheet" href="HATs_files/font.css" media="screen">
+<link rel="stylesheet" href="HATs_files/typography.css" media="screen">
+<link rel="stylesheet" href="HATs_files/misc.css" media="screen">
+<link rel="stylesheet" href="HATs_files/menu.css" media="screen">
+<link rel="stylesheet" href="HATs_files/menu-blue.css" media="screen">
+<link rel="stylesheet" href="HATs_files/social-buttons.css" media="screen"><style>
+ul.bss{position:relative;list-style:none;padding:0;margin:0;overflow:hidden;display:none}li.bss-slide{position:absolute;display:none}ul.bss-controls{list-style:none;margin:0;padding:0;z-index:9999;margin-top:5px;display:none}ul.bss-controls.v-centered li a{position:absolute}ul.bss-controls.v-centered li.bss-next a{right:0;background:#fff;padding:5px}ul.bss-controls.v-centered li.bss-prev a{left:0;background:#fff;padding:5px}ol.bss-markers{list-style:none;padding:0;margin:0;width:100%;display:none}ol.bss-markers.h-centered{text-align:center;margin-top:11px}ol.bss-markers li{display:inline}ol.bss-markers li a{padding:5px 10px;background:none repeat scroll 0% 0% #000;color:#FFF;margin:5px;text-decoration:none;margin-top:5px}ol.bss-markers li a:hover{background:none repeat scroll 0% 0% #999}p.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5;size:24;color:#000}h2.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.7}h3.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}h4.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:7d2cc887121ffe243a0bd2f0b3cedae4 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(https://wiki.radxa.com/mw/resources/src/mediawiki.action/images/green-checkmark.png?2014-08-27T21:45:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:a71b6527faa0851bef5cf6359dbfd5c1 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="HATs_files/load.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:055353e9ed091aa075288819bb455ad1 */</style>
+<script src="HATs_files/cbgapi.html" async=""></script><script type="text/javascript" async="" src="HATs_files/shopifystore.js"></script><script type="text/javascript" async="" src="HATs_files/ga.js"></script><script src="HATs_files/load_003.php"></script><script src="HATs_files/load.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rockpi4/hardware/HATs","wgTitle":"Rockpi4/hardware/HATs","wgCurRevisionId":3587,"wgRevisionId":3587,"wgArticleId":552,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rockpi4/hardware/HATs","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"bootstraphalcyon","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250
+,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-js:7:39521c0c6f731732e1b5f897f7fb5d15 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="HATs_files/load_006.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mw/skins/bootstrapskin/csshover.min.htc")}</style><![endif]--><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2992653-31']);
+  _gaq.push(['_setDomainName', 'mediawikibootstrapskin.co.uk']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script type="text/javascript">
+  var ShopifyStoreConfig = {shop:"radxa.myshopify.com", collections:[11863785]};
+  (function() {
+	  	      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; 
+			  		      s.src = "//widgets.shopifyapps.com/assets/shopifystore.js";
+			  		      var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+						  			    })();  
+  </script>
+	  <noscript>Please enable javascript, or <a href="http://radxa.myshopify.com">click here</a> to visit my <a href="http://www.shopify.com/tour/ecommerce-website">ecommerce web site</a> powered by Shopify.</noscript><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Rockpi4_hardware_HATs skin-bootstrapskin action-view" style="display: block;">
+<div id="userbar" class="bg-cyan">
+  <div class="body">
+      <div class="col-md-12 hidden-xs hidden-sm">
+      <ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
+	    <li><a href="https://wiki.radxa.com/Home"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="https://wiki.radxa.com/news"><i class="fa fa-rss"></i>News</a></li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-bars"></i>Products</a>
+			<div class="grid-container3">
+			<ul>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/zero">Zero</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/zero"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/zero/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/zero/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/zero/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/zero/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rock3">ROCK 3</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rock3"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rock3/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/CM3"><i class="fa fa-laptop"></i>Compute Module</a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpi4">ROCK Pi 4</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpi4"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpi4/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiS">ROCK Pi S</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiS"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiS/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiE">ROCK Pi E</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiE"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiE/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiX">ROCK Pi X</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiX"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiX/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiN10">ROCK Pi N10</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/accessories">Accessories</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/PoE_HAT"><i class="fa fa-arrow-up"></i>PoE HAT</a></li>
+				 			<li><a href="https://wiki.radxa.com/SATA_HAT"><i class="fa fa-arrow-up"></i>SATA HAT</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="https://wiki.radxa.com/Buy"><i class="fa fa-shopping-cart"></i>Buy</a>
+			<div class="grid-container3">
+			<ul>
+				<!--<li><a href="#shopify-store"><i class="fa fa-plane"></i>Radxa Store</a></li> -->
+				<li><a href="https://wiki.radxa.com/Buy"><i class="fa fa-truck"></i>Distributors</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-users"></i>Community</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="http://forum.radxa.com/"><i class="fa fa-comments"></i>Forum</a></li>
+				<li><a href="http://github.com/radxa"><i class="fa fa-github"></i>Github</a></li>
+			</ul>
+			</div>
+		</li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-envelope"></i>Contact</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="https://wiki.radxa.com/Special:SpecialContact"><i class="fa fa-mail-reply-all"></i>Contact us</a></li>
+				<li><a href="https://wiki.radxa.com/about"><i class="fa fa-user"></i>About Radxa</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true"><a href="javascript:void(0)"><i class="fa fa-pencil-square"></i>Edit</a>
+			<div class="grid-container3">
+				<ul>
+        		<li>
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+		  
+			<a href="#"><i class="fa fa-question"></i> Personal</a>
+				<div class="grid-container3">
+					<ul>
+					<li id="pt-createaccount"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rockpi4%2Fhardware%2FHATs&amp;type=signup">Create account</a></li><li id="pt-login"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rockpi4%2Fhardware%2FHATs" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>					</ul>
+				</div>	  
+          
+<!-- /0 -->
+</li>
+        		<li aria-haspopup="true">
+<!-- 0 -->
+          <a href="#"><i class="fa fa-book"></i> Page</a>
+				<div class="grid-container3">
+				<ul>
+              
+                                                                                        
+                <li id="ca-nstab-main" class="selected"><a href="https://wiki.radxa.com/Rockpi4/hardware/HATs" title="View the content page [alt-shift-c]" accesskey="c" tabindex="-1">Page</a></li><li id="ca-talk" class="new"><a href="https://wiki.radxa.com/mw/index.php?title=Talk:Rockpi4/hardware/HATs&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t" tabindex="-1">Discussion</a></li><li id="ca-viewsource"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e" tabindex="-1">View source</a></li><li id="ca-history" class="collapsible"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h" tabindex="-1">History</a></li></ul></div>
+		    	  
+		  
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				</ul>
+			</div>
+		</li>
+		<li class="right search">					
+					<form class="navbar-search" action="/mw/index.php" id="searchform">					
+						<div class="input">
+							<button type="submit" class="button">Go</button>
+							<input id="searchInput" type="search" accesskey="f" title="Special:Search" placeholder="Search" name="search" autocomplete="off">
+						</div>					
+					</form>
+		</li>				
+		<li aria-haspopup="true">
+<!-- 0 -->
+              <a href="#"><i class="fa fa-wrench"></i> Tools</a>
+              <div class="grid-container3">
+              <ul>
+                <li id="t-info"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;action=info">Page information</a></li><li id="t-permalink"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;oldid=3587" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-print"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li class="divider"></li><li id="t-specialpages"><a href="https://wiki.radxa.com/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-recentchangeslinked"><a href="https://wiki.radxa.com/Special:RecentChangesLinked/Rockpi4/hardware/HATs" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li class="divider"></li><li id="t-whatlinkshere"><a href="https://wiki.radxa.com/Special:WhatLinksHere/Rockpi4/hardware/HATs" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>				
+            </ul>
+			</div>
+			
+			</li>
+		  
+          </ul>
+
+            
+		   
+          
+<!-- /0 -->
+
+	
+       
+	  
+        
+<!-- 0 -->
+         
+         
+<!-- /LANGUAGES -->
+		
+      </div>
+	  </div>
+
+      <div class="pull-right">
+              </div>
+  </div>
+      
+<!-- 0 -->
+
+<!-- /0 -->
+
+      
+ 
+
+
+    <div id="mw-page-base" class="noprint"></div>
+    <div id="mw-head-base" class="noprint"></div>
+
+    <!-- Header -->
+    <div id="page-header" class="container-fluid signed-out">
+      <div class="col-md-4 pull-left">
+
+                        <ul class="nav logo-container" role="navigation"><li id="p-logo"><a href="https://wiki.radxa.com/Home" title="Visit the main page"><img src="HATs_files/radxa_logo.png" alt="Radxa Wiki" style="width:90%"></a></li><li></li></ul>
+	  
+	  </div>
+    </div>
+
+    
+    
+    <!-- content -->
+    <section id="content" class="mw-body container-fluid 0">
+      <div id="top"></div>
+      <div id="mw-js-message" style="display:none;"></div>
+            <!-- bodyContent -->
+      <div id="bodyContent">
+                        <!-- jumpto -->
+        <div id="jump-to-nav" class="mw-jump">
+          Jump to: <a href="#mw-head">navigation</a>,
+          <a href="#p-search">search</a>
+        </div>
+        <!-- /jumpto -->
+                
+        <!-- innerbodycontent -->
+                  <div id="innerbodycontent" class="row nolayout"><div class="offset1 span10">
+            <h1 id="firstHeading" class="firstHeading page-header">
+              <span dir="auto">Rockpi4/hardware/HATs</span>
+            </h1>
+            <!-- subtitle -->
+            <div id="contentSub"><span class="subpages">&lt; <a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4">Rockpi4</a>‎ | <a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware">hardware</a></span></div>
+            <!-- /subtitle -->
+                        <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="hf-nsheader"></div><div class="hf-header"></div><div class="col-md-12">
+<div class="col-sm-12">
+      <ul class="nav nav-pills nav-tabs-lighter">
+        <li><a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4"> Main</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/getting_started" title="Rockpi4/getting started"> Getting Started</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware"> Hardware</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/downloads" title="Rockpi4/downloads"> Downloads</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/FAQs" title="Rockpi4/FAQs"> FAQs</a></li>
+      </ul>
+</div>
+</div>
+<div class="col-md-12">
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <strong class="selflink">English</strong></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs/zh_cn&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/HATs/zh cn (page does not exist)">中文（中国大陆）‎</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/Rockpi4/hardware/HATs/es_es" title="Rockpi4/hardware/HATs/es es">español</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs/de_DE&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/HATs/de DE (page does not exist)">Deutsch</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs/pt_BR&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/HATs/pt BR (page does not exist)">português do Brasil</a></div>
+<div class="box-Title"></div>
+</div>
+<pre>   <a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4"> ROCK Pi 4</a> &gt; <a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware"> Hardware</a> &gt; <strong class="selflink"> HATs</strong>
+</pre>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introductions"><span class="tocnumber">1</span> <span class="toctext">Introductions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#HATs_Lists"><span class="tocnumber">2</span> <span class="toctext">HATs Lists</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#RaZberry.2FRaZberry2"><span class="tocnumber">2.1</span> <span class="toctext">RaZberry/RaZberry2</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#ROCK_Pi_PoE_HAT"><span class="tocnumber">2.2</span> <span class="toctext">ROCK Pi PoE HAT</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#HiFiBerry"><span class="tocnumber">2.3</span> <span class="toctext">HiFiBerry</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introductions">Introductions</span></h2>
+<p>A HAT (Hardware Attached on Top) is an add-on board for ROCK Pi 4 
+that conforms to a specific set of rules that will make life easier for 
+users. 
+</p>
+<h2><span class="mw-headline" id="HATs_Lists">HATs Lists</span></h2>
+<p>A list of working HATs tested by radxa and the community.
+</p>
+<h3><span class="mw-headline" id="RaZberry.2FRaZberry2">RaZberry/RaZberry2</span></h3>
+<p>Zwave module by Z-Wave.Me. It uses uart2 TX/RX on the 40PIN GPIO. 
+Tested working on ROCK Pi 4 by disabling the serial console on uart2. 
+See <a rel="nofollow" class="external text" href="https://forum.radxa.com/t/configuring-kernel-before-building/123/22">discussion on the forum</a>.
+</p>
+<h3><span class="mw-headline" id="ROCK_Pi_PoE_HAT">ROCK Pi PoE HAT</span></h3>
+<p>ROCK Pi PoE allows to provide both  power and network connectivity to your ROCK Pi across a single Ethernet cable. Refer <a href="https://wiki.radxa.com/PoE_HAT" title="PoE HAT">PoE_HAT</a> page for more info.
+</p>
+<h3><span class="mw-headline" id="HiFiBerry">HiFiBerry</span></h3>
+<p>HiFiBerry, high quality audio equipment for the ROCK Pi 4 platform. Refer <a href="https://wiki.radxa.com/HiFiBerry" title="HiFiBerry">HiFiBerry</a> page for more info.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.012 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 52/1000000
+Preprocessor generated node count: 189/1000000
+Post‐expand include size: 1109/2097152 bytes
+Template argument size: 105/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key radxa_wiki-radxa_wiki:pcache:idhash:552-0!*!0!!en!*!* and timestamp 20211223013148 and revision id 3587
+ -->
+<div class="hf-footer"></div><div class="hf-nsfooter"></div></div>          </div></div>
+                <!-- /innerbodycontent -->
+                <!-- printfooter -->
+        <div class="printfooter">
+        Retrieved from "<a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;oldid=3587">https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/HATs&amp;oldid=3587</a>"        </div>
+        <!-- /printfooter -->
+                        <!-- catlinks -->
+        <div id="catlinks" class="catlinks catlinks-allhidden"></div>        <!-- /catlinks -->
+                        <div class="visualClear"></div>
+        <!-- debughtml -->
+                <!-- /debughtml -->
+      </div>
+      <!-- /bodyContent -->
+    </section>
+    <!-- /content -->
+
+      <!-- footer -->
+
+      <div id="footer" class="footer container-fluid custom-footer"><script type="text/javascript" src="HATs_files/plusone.js" gapi_processed="true"></script>
+<div id="footer" class="footer container-fluid">
+	<div class="col-md-12">
+<div class="footer-links">
+    <div class="container">         
+<div class="footer-Title"></div>
+<div class="col-md-4 pull-left">
+<small>Copyright©2021 Radxa Limited | 瑞莎科技</small>
+</div>
+<div class="col-md-8 pull-right">
+<ul id="siteFooterMenu" class="siteFooterMenu">
+<li><a href="https://wiki.radxa.com/">Home</a></li>
+<li><a href="https://wiki.radxa.com/Buy">Buy</a></li>
+<li><a href="http://forum.radxa.com/">Forum</a></li>
+<li><a href="https://wiki.radxa.com/Rock/download">Download</a></li>
+<li><a href="https://wiki.radxa.com/Rock/FAQ">FAQs</a></li>
+<li><a href="https://wiki.radxa.com/Special:SpecialContact">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-md-12">
+<div class="text-center" style="margin-top:20px;">
+<a rel="license" href="https://creativecommons.org/licenses/by/3.0/"></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+</div>
+</div>
+    
+</div>
+    <script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"skins.bootstrapskin":"loading","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="HATs_files/load_005.php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.BootStrapSkinSlideshow"],null,true);
+}</script>
+<script src="HATs_files/load_002.php"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43717967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":70});
+}</script>
+  
+
+</div></div></div></div><div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><style></style></body></html>

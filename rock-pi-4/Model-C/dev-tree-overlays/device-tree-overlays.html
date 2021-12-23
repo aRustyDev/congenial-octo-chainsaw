@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="device-tree-overlays_files/analytics.js"></script><script async="" src="device-tree-overlays_files/load_004.php"></script>
+<meta charset="UTF-8">
+<title>Rockpi4/hardware/devtree overlays - Radxa Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.3">
+<link rel="shortcut icon" href="https://wiki.radxa.com/Rockpi4/radxa_x_64.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.radxa.com/mw/opensearch_desc.php" title="Radxa Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.radxa.com/mw/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Radxa Wiki Atom feed" href="https://wiki.radxa.com/mw/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="device-tree-overlays_files/load_002.css">
+<link rel="stylesheet" href="device-tree-overlays_files/bootstrap-green.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/screen.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/theme.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/jquery-ui.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/font.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/typography.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/misc.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/menu.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/menu-blue.css" media="screen">
+<link rel="stylesheet" href="device-tree-overlays_files/social-buttons.css" media="screen"><style>
+ul.bss{position:relative;list-style:none;padding:0;margin:0;overflow:hidden;display:none}li.bss-slide{position:absolute;display:none}ul.bss-controls{list-style:none;margin:0;padding:0;z-index:9999;margin-top:5px;display:none}ul.bss-controls.v-centered li a{position:absolute}ul.bss-controls.v-centered li.bss-next a{right:0;background:#fff;padding:5px}ul.bss-controls.v-centered li.bss-prev a{left:0;background:#fff;padding:5px}ol.bss-markers{list-style:none;padding:0;margin:0;width:100%;display:none}ol.bss-markers.h-centered{text-align:center;margin-top:11px}ol.bss-markers li{display:inline}ol.bss-markers li a{padding:5px 10px;background:none repeat scroll 0% 0% #000;color:#FFF;margin:5px;text-decoration:none;margin-top:5px}ol.bss-markers li a:hover{background:none repeat scroll 0% 0% #999}p.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5;size:24;color:#000}h2.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.7}h3.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}h4.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:7d2cc887121ffe243a0bd2f0b3cedae4 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(https://wiki.radxa.com/mw/resources/src/mediawiki.action/images/green-checkmark.png?2014-08-27T21:45:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:a71b6527faa0851bef5cf6359dbfd5c1 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="device-tree-overlays_files/load.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:055353e9ed091aa075288819bb455ad1 */</style>
+<script src="device-tree-overlays_files/cbgapi.html" async=""></script><script type="text/javascript" async="" src="device-tree-overlays_files/shopifystore.js"></script><script type="text/javascript" async="" src="device-tree-overlays_files/ga.js"></script><script src="device-tree-overlays_files/load_003.php"></script><script src="device-tree-overlays_files/load.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rockpi4/hardware/devtree_overlays","wgTitle":"Rockpi4/hardware/devtree overlays","wgCurRevisionId":5692,"wgRevisionId":5692,"wgArticleId":551,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rockpi4/hardware/devtree_overlays","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"bootstraphalcyon","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250
+,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-js:7:39521c0c6f731732e1b5f897f7fb5d15 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="device-tree-overlays_files/load_006.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mw/skins/bootstrapskin/csshover.min.htc")}</style><![endif]--><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2992653-31']);
+  _gaq.push(['_setDomainName', 'mediawikibootstrapskin.co.uk']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script type="text/javascript">
+  var ShopifyStoreConfig = {shop:"radxa.myshopify.com", collections:[11863785]};
+  (function() {
+	  	      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; 
+			  		      s.src = "//widgets.shopifyapps.com/assets/shopifystore.js";
+			  		      var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+						  			    })();  
+  </script>
+	  <noscript>Please enable javascript, or <a href="http://radxa.myshopify.com">click here</a> to visit my <a href="http://www.shopify.com/tour/ecommerce-website">ecommerce web site</a> powered by Shopify.</noscript><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Rockpi4_hardware_devtree_overlays skin-bootstrapskin action-view" style="display: block;">
+<div id="userbar" class="bg-cyan">
+  <div class="body">
+      <div class="col-md-12 hidden-xs hidden-sm">
+      <ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
+	    <li><a href="https://wiki.radxa.com/Home"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="https://wiki.radxa.com/news"><i class="fa fa-rss"></i>News</a></li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-bars"></i>Products</a>
+			<div class="grid-container3">
+			<ul>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/zero">Zero</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/zero"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/zero/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/zero/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/zero/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/zero/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rock3">ROCK 3</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rock3"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rock3/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/CM3"><i class="fa fa-laptop"></i>Compute Module</a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpi4">ROCK Pi 4</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpi4"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpi4/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiS">ROCK Pi S</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiS"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiS/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiE">ROCK Pi E</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiE"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiE/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiX">ROCK Pi X</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiX"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiX/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiN10">ROCK Pi N10</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/accessories">Accessories</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/PoE_HAT"><i class="fa fa-arrow-up"></i>PoE HAT</a></li>
+				 			<li><a href="https://wiki.radxa.com/SATA_HAT"><i class="fa fa-arrow-up"></i>SATA HAT</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="https://wiki.radxa.com/Buy"><i class="fa fa-shopping-cart"></i>Buy</a>
+			<div class="grid-container3">
+			<ul>
+				<!--<li><a href="#shopify-store"><i class="fa fa-plane"></i>Radxa Store</a></li> -->
+				<li><a href="https://wiki.radxa.com/Buy"><i class="fa fa-truck"></i>Distributors</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-users"></i>Community</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="http://forum.radxa.com/"><i class="fa fa-comments"></i>Forum</a></li>
+				<li><a href="http://github.com/radxa"><i class="fa fa-github"></i>Github</a></li>
+			</ul>
+			</div>
+		</li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-envelope"></i>Contact</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="https://wiki.radxa.com/Special:SpecialContact"><i class="fa fa-mail-reply-all"></i>Contact us</a></li>
+				<li><a href="https://wiki.radxa.com/about"><i class="fa fa-user"></i>About Radxa</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true"><a href="javascript:void(0)"><i class="fa fa-pencil-square"></i>Edit</a>
+			<div class="grid-container3">
+				<ul>
+        		<li>
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+		  
+			<a href="#"><i class="fa fa-question"></i> Personal</a>
+				<div class="grid-container3">
+					<ul>
+					<li id="pt-createaccount"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rockpi4%2Fhardware%2Fdevtree+overlays&amp;type=signup">Create account</a></li><li id="pt-login"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rockpi4%2Fhardware%2Fdevtree+overlays" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>					</ul>
+				</div>	  
+          
+<!-- /0 -->
+</li>
+        		<li aria-haspopup="true">
+<!-- 0 -->
+          <a href="#"><i class="fa fa-book"></i> Page</a>
+				<div class="grid-container3">
+				<ul>
+              
+                                                                                        
+                <li id="ca-nstab-main" class="selected"><a href="https://wiki.radxa.com/Rockpi4/hardware/devtree_overlays" title="View the content page [alt-shift-c]" accesskey="c" tabindex="-1">Page</a></li><li id="ca-talk" class="new"><a href="https://wiki.radxa.com/mw/index.php?title=Talk:Rockpi4/hardware/devtree_overlays&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t" tabindex="-1">Discussion</a></li><li id="ca-viewsource"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e" tabindex="-1">View source</a></li><li id="ca-history" class="collapsible"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h" tabindex="-1">History</a></li></ul></div>
+		    	  
+		  
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				</ul>
+			</div>
+		</li>
+		<li class="right search">					
+					<form class="navbar-search" action="/mw/index.php" id="searchform">					
+						<div class="input">
+							<button type="submit" class="button">Go</button>
+							<input id="searchInput" type="search" accesskey="f" title="Special:Search" placeholder="Search" name="search" autocomplete="off">
+						</div>					
+					</form>
+		</li>				
+		<li aria-haspopup="true">
+<!-- 0 -->
+              <a href="#"><i class="fa fa-wrench"></i> Tools</a>
+              <div class="grid-container3">
+              <ul>
+                <li id="t-info"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;action=info">Page information</a></li><li id="t-permalink"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;oldid=5692" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-print"><a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li class="divider"></li><li id="t-specialpages"><a href="https://wiki.radxa.com/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-recentchangeslinked"><a href="https://wiki.radxa.com/Special:RecentChangesLinked/Rockpi4/hardware/devtree_overlays" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li class="divider"></li><li id="t-whatlinkshere"><a href="https://wiki.radxa.com/Special:WhatLinksHere/Rockpi4/hardware/devtree_overlays" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>				
+            </ul>
+			</div>
+			
+			</li>
+		  
+          </ul>
+
+            
+		   
+          
+<!-- /0 -->
+
+	
+       
+	  
+        
+<!-- 0 -->
+         
+         
+<!-- /LANGUAGES -->
+		
+      </div>
+	  </div>
+
+      <div class="pull-right">
+              </div>
+  </div>
+      
+<!-- 0 -->
+
+<!-- /0 -->
+
+      
+ 
+
+
+    <div id="mw-page-base" class="noprint"></div>
+    <div id="mw-head-base" class="noprint"></div>
+
+    <!-- Header -->
+    <div id="page-header" class="container-fluid signed-out">
+      <div class="col-md-4 pull-left">
+
+                        <ul class="nav logo-container" role="navigation"><li id="p-logo"><a href="https://wiki.radxa.com/Home" title="Visit the main page"><img src="device-tree-overlays_files/radxa_logo.png" alt="Radxa Wiki" style="width:90%"></a></li><li></li></ul>
+	  
+	  </div>
+    </div>
+
+    
+    
+    <!-- content -->
+    <section id="content" class="mw-body container-fluid 0">
+      <div id="top"></div>
+      <div id="mw-js-message" style="display:none;"></div>
+            <!-- bodyContent -->
+      <div id="bodyContent">
+                        <!-- jumpto -->
+        <div id="jump-to-nav" class="mw-jump">
+          Jump to: <a href="#mw-head">navigation</a>,
+          <a href="#p-search">search</a>
+        </div>
+        <!-- /jumpto -->
+                
+        <!-- innerbodycontent -->
+                  <div id="innerbodycontent" class="row nolayout"><div class="offset1 span10">
+            <h1 id="firstHeading" class="firstHeading page-header">
+              <span dir="auto">Rockpi4/hardware/devtree overlays</span>
+            </h1>
+            <!-- subtitle -->
+            <div id="contentSub"><span class="subpages">&lt; <a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4">Rockpi4</a>‎ | <a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware">hardware</a></span></div>
+            <!-- /subtitle -->
+                        <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="hf-nsheader"></div><div class="hf-header"></div><div class="col-md-12">
+<div class="col-sm-12">
+      <ul class="nav nav-pills nav-tabs-lighter">
+        <li><a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4"> Main</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/getting_started" title="Rockpi4/getting started"> Getting Started</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware"> Hardware</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/downloads" title="Rockpi4/downloads"> Downloads</a></li>
+        <li><a href="https://wiki.radxa.com/Rockpi4/FAQs" title="Rockpi4/FAQs"> FAQs</a></li>
+      </ul>
+</div>
+</div>
+<div class="col-md-12">
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <strong class="selflink">English</strong></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays_/zh_cn&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/devtree overlays /zh cn (page does not exist)">中文（中国大陆）‎</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/Rockpi4/hardware/devtree_overlays_/es_es" title="Rockpi4/hardware/devtree overlays /es es">español</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays_/de_DE&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/devtree overlays /de DE (page does not exist)">Deutsch</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays_/pt_BR&amp;action=edit&amp;redlink=1" class="new" title="Rockpi4/hardware/devtree overlays /pt BR (page does not exist)">português do Brasil</a></div>
+<div class="box-Title"></div>
+</div>
+<pre>   <a href="https://wiki.radxa.com/Rockpi4" title="Rockpi4"> ROCK Pi 4</a> &gt; <a href="https://wiki.radxa.com/Rockpi4/hardware" title="Rockpi4/hardware"> Hardware</a> &gt; <strong class="selflink"> Device Tree Overlays</strong>
+</pre>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Device_Tree_Overlays"><span class="tocnumber">1</span> <span class="toctext">Device Tree Overlays</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Introduction"><span class="tocnumber">1.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#File_Structure"><span class="tocnumber">1.2</span> <span class="toctext">File Structure</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Using_Overlays"><span class="tocnumber">1.3</span> <span class="toctext">Using Overlays</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#The_Overlay_and_Parameter_Reference"><span class="tocnumber">1.3.1</span> <span class="toctext">The Overlay and Parameter Reference</span></a>
+<ul>
+<li class="toclevel-4 tocsection-6"><a href="#Enabling_and_disabling_BUS"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Enabling and disabling BUS</span></a></li>
+<li class="toclevel-4 tocsection-7"><a href="#Loading_hardware_module"><span class="tocnumber">1.3.1.2</span> <span class="toctext">Loading hardware module</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-8"><a href="#Example_for_1-wire_communication:_DS18B20"><span class="tocnumber">1.3.2</span> <span class="toctext">Example for 1-wire communication: DS18B20</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Installing_ROCK_Pi_4_dtbo_package"><span class="tocnumber">1.4</span> <span class="toctext">Installing ROCK Pi 4 dtbo package</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Device_Tree_Overlays">Device Tree Overlays</span></h3>
+<h4><span class="mw-headline" id="Introduction">Introduction</span></h4>
+<p>This directory contains Device Tree overlays. Device Tree makes it possible
+to support many hardware configurations with a single kernel and without the
+need to explicitly load or blacklisr kernel modules.
+</p><p>On Rock Pi, you will find a rockpi-4b-linux.dtb in /boot. This
+describes the hardware that is part of the Rock Pi board. The loader selects
+the .dtb file appropriate for the platform by name and pass it to the kernel.
+</p><p>Device Tree Overlays usage is controlled from /boot/hw_intfc.conf. You can do
+the settings for Rock Pi in your hw_intfc.conf, which should cause your
+Rock Pi to do your wanted things after a reboot.
+</p><p>In /boot/overlays you will find many .dtbo files. The loader will merge the
+selected .dtbo files by reading file /boot/hw_intfc.conf.
+</p><p>File hw_intfc.conf also can be found in [<a rel="nofollow" class="external text" href="https://github.com/radxa/rockchip-bsp">SDK rockchip-bsp</a>]  directory,  rockchip-bsp/kernel/arch/arm64/boot/dts/rockchip/overlays/
+</p>
+<h4><span class="mw-headline" id="File_Structure">File Structure</span></h4>
+<pre> /boot
+   |--rockpi-4b-linux.dtb
+   |--hw_intfc.conf
+   |--overlays
+     |--at24c02.dtbo
+     |--console-on-ttyS2.dtbo
+     |--console-on-ttyS4.dtbo
+     |--cpufreq.dtbo
+     |--devspi1.dtbo
+     |--devspi2.dtbo
+     |--hifiberry-dac.dtbo
+     |--hifiberry-dacplus.dtbo
+     |--imx219.dtbo
+     |--ov5647.dtbo
+     |--pcie-gen2.dtbo
+     |--raspberrypi-7-inch-lcd.dtbo
+     |--spi1-flash.dtbo
+     |--spi1-waveshare35b-v2.dtbo
+     |--spi1-waveshare35c.dtbo
+     |--two-color-led.dtbo
+     |--w1-gpio4-30.dtbo
+</pre>
+<h4><span class="mw-headline" id="Using_Overlays">Using Overlays</span></h4>
+<p>Overlays are loaded using "intfc:" directive. As an example, consider the
+at24c02 module. Add one line in hw_intfc.conf:
+</p>
+<pre> intfc:dtoverlay=at24c02
+</pre>
+<p>This causes the file /boot/overlays/at24c02.dtbo to be loaded.
+</p>
+<h5><span class="mw-headline" id="The_Overlay_and_Parameter_Reference">The Overlay and Parameter Reference</span></h5>
+<p>N.B. It is recommended to only ebable those bus interfaces that are 
+needed. Leaving all interfaces enabled can lead to unwanted behaviour.
+</p><p>Seeing  <a href="https://wiki.radxa.com/Rockpi4/hardware/rockpi4#gpio" title="Rockpi4/hardware/rockpi4"> 40-pin GPIO connector </a>, we  find that UART4 and SPI1 share some pins, and I2C6 and SPI2 share some pins.
+</p><p>In order to solve the problem of pin conflicts, we make a convention.
+</p><p>When we set UART4 and SPI1 to "on" at the same, the system will 
+forcibly set UART4 to "on" and SPI1 to "off" (Although you see SPI1 is 
+“on” on file hw_intfc.conf,).
+</p><p>When we set I2C6 and SPI2 to "on" at the same time, the system will forcibly set I2C6 to "on" and SPI2 to "off".
+</p>
+<h6><span class="mw-headline" id="Enabling_and_disabling_BUS">Enabling and disabling BUS</span></h6>
+<pre> Name:	pwm0
+ Info:	Overlay for BUS PWM0
+ Load:	intfc:pwm0=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the pwm0 interface (default "off")
+ 	off		Set to "off" to disable the pwm0 interface
+ 
+ Name:	pwm1
+ Info:	Overlay for BUS PWM1
+ Load:	intfc:pwm1=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the pwm1 interface (default "off")
+ 	off		Set to "off" to disable the pwm2 interface
+ 
+ Name:	uart2
+ Info:	Overlay for BUS UART2
+ Load:	intfc:uart2=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the uart2 interface (default "off")
+ 	off		Set to "off" to disable the uart2 interface
+ 
+ Name:	uart4
+ Info:	Overlay for BUS UART4
+ Load:	intfc:uart4=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the uart4 interface (default "off")
+ 	off		Set to "off" to disable the uart4 interface
+ 
+ Name:	spi1
+ Info:	Overlay for BUS SPI1
+ Load:	intfc:spi1=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the spi1 interface (default "off")
+ 	off		Set to "off" to disable the spi1 interface
+ 
+ Name:	spi2
+ Info:	Overlay for BUS SPI2
+ Load:	intfc:spi2=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the spi2 interface (default "off")
+ 	off		Set to "off" to disable the spi2 interface
+ 
+ Name:	i2c2
+ Info:	Overlay for BUS I2C2
+ Load:	intfc:i2c2=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the i2c2 interface (default "off")
+ 	off		Set to "off" to disable the i2c2 interface
+ 
+ Name:	i2c6
+ Info:	Overlay for BUS I2C6
+ Load:	intfc:i2c6=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the i2c6 interface (default "off")
+ 	off		Set to "off" to disable the i2c6 interface
+ 
+ Name:	i2c7
+ Info:	Overlay for BUS I2C7
+ Load:	intfc:i2c7=&lt;value&gt;
+ Value:
+ 	on		Set to "on" to enable the i2c7 interface (default "off")
+ 	off		Set to "off" to disable the i2c7 interface
+ 
+</pre>
+<h6><span class="mw-headline" id="Loading_hardware_module">Loading hardware module</span></h6>
+<pre> Name:	at24c02
+ Info:	Overlay for activation of EEPROM AT24C02 over I2C2.
+ Load:	intfc:dtoverlay=at24c02
+
+ Name:	two-color-led
+ Info:	Overlay for activation of ALLNET 4duino B10/B11 two-coloe-led 
+ 	module on 40-pin Header Pin#35 and Pin#36
+ Load:	intfc:dtoverlay=two-color-led
+
+ Name:	console-on-ttyS2
+ Info:	By default, fiq debugger console is disabled.
+ 	When this dtbo file is loaded, Rock Pi enables fiq debugger console.
+ 	ttyS2 Pins will output console information.
+ 	At the same time, it is recommended that you set UART2 to off in
+ 	file /boot/hw_intfc.conf and do not load console-on-ttyS4.dtbo file.
+ Load:	intfc:dtoverlay=console-on-ttyS2
+
+ Name:	console-on-ttyS4
+ Info:	By default, fiq debugger console is disabled.
+ 	When this dtbo file is loaded, Rock Pi enables fiq debugger console.
+ 	ttyS4 Pins will output console information.
+ 	At the same time, it is recommended that you set UART4 to off in
+ 	file /boot/hw_intfc.conf and do not load console-on-ttyS2.dtbo file.
+ Load:	intfc:dtoverlay=console-on-ttyS4
+
+ Name:	devspi1
+ Info:	Overlay for activation of dummy spi device on SPI1 for userspace
+	access such as libmraa.
+	Need set: intfc:spi1=on
+	By default, spi1 is disabled.
+ 	when use spi1, uart4 must be disabled.
+ Load:	intfc:dtoverlay=devspi1
+ 
+ Name:	devspi2
+ Info:	Overlay for activation of dummy spi device on SPI2 for userspace
+	access such as libmraa.
+	Need setting: intfc:spi2=on
+ 	When use spi2. i2c6 must be disabled.
+ Load:	intfc:dtoverlay=devspi2
+ 
+ Name:	pcie-gen2
+ Info:	Overlay for activation of pcie running on GEN2 mode.
+ Load:	intfc:dtoverlay=pcie-gen2
+ 
+ Name:	spi1-waveshare35b-v2
+ Info:	Overlay for activation of waveshare 3.5inch lcd(B v2).
+ 	Need setting: intfc:uart4=off intfc:spi1=on
+ Load: 	intfc:dtoverlay=spi1-0waveshare35b-v2
+ 
+ Name:	spi1-waveshare35c
+ Info:	Overlay for activation of waveshare 3.5inch lcd(C).
+ 	Need setting: intfc:uart4=off intfc:spi1=on
+ Load:	intfc:dtoverlay=spi1-waveshare35c
+ 
+ Name:	spi1-flash
+ Info:	Overlay for activation of spi flash.
+ 	Need setting: intfc:uart4=off intfc:spi1=on
+ Load:	intfc:dtoverlay=spi1-flash
+ 
+ Name:	hifiberry-dac
+ Info:	Overlay for activation of hifiberry dac.
+ 	Need setting: intfc:i2c7=on
+ Load:	intfc:dtoverlay=hifiberry-dac
+ 
+ Name:	hifiberry-dacplus
+ Info:	Overlay for activation of hifiberry dac plus
+ Load:	intfc:dtoverlay=hifiberry-dacplus
+ 
+ Name:	raspberrypi-7-inch-lcd
+ Info:	Overlay for activation of raspberry pi official 7 inch LCD
+ Load:	intfc:dtoverlay=raspberrypi-7-inch-lcd
+ 
+ Name:	cpufreq
+ Info:	Overlay for activation of setting cpu frequency over-2GHz
+ Load:	intfc:dtoverlay=cpufreq
+ 
+ Name:	imx219
+ Info:	Overlay for activation of imx219 camera module.
+ 	Need to disable ov5647 camera module.
+ Load:	intfc:dtoverlay=imx219
+ 
+ Name:	ov5647
+ Info:	Overlay for activation of ov5647 camera module.
+ 	Need to disable imx219 camera module.
+ Load:	intfc:dtoverlay=ov5647
+ 
+ Name:	w1-gpio4-30
+ Info:	Overlay for activation of 1-wire on GPIO4_D6 for devices 
+ 	such as DS18B20.
+ Load:	intfc:dtoverlay=w1-gpio4-30
+</pre>
+<h5><span class="mw-headline" id="Example_for_1-wire_communication:_DS18B20">Example for 1-wire communication: DS18B20</span></h5>
+<p>After adding w1-gpio4-30.dtbo file and reboot the machine, you need to load the driver modules, w1-gpio and w1-therm.
+</p>
+<pre> $ sudo modprobe w1-gpio
+ $ sudo modprobe w1-therm
+</pre>
+<p>Check sensor
+</p>
+<pre> $ cd /sys/bus/w1/devices
+ 28-00000b061653  w1_bus_master1
+</pre>
+<p>Get current temperature
+</p>
+<pre> $ cat ./28-00000b061653/w1_slave 
+ cb 01 4b 46 7f ff 05 10 73&nbsp;: crc=73 YES
+ cb 01 4b 46 7f ff 05 10 73 t=28687
+</pre>
+<p>It shows that the temperature is 28.687 degrees Celsius.
+</p>
+<h4><span class="mw-headline" id="Installing_ROCK_Pi_4_dtbo_package">Installing ROCK Pi 4 dtbo package</span></h4>
+<p>Radxa APT provides rockpi4-dtbo package that includes hw_intfc.conf and .dtbo files. To use it, do:
+</p>
+<pre> $ sudo apt-get update
+ $ sudo apt-get install rockchip-fstab
+ $ sudo apt-get install rockpi4-dtbo
+</pre>
+<!-- 
+NewPP limit report
+CPU time usage: 0.012 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 68/1000000
+Preprocessor generated node count: 215/1000000
+Post‐expand include size: 1174/2097152 bytes
+Template argument size: 170/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key radxa_wiki-radxa_wiki:pcache:idhash:551-0!*!0!!en!*!* and timestamp 20211222201703 and revision id 5692
+ -->
+<div class="hf-footer"></div><div class="hf-nsfooter"></div></div>          </div></div>
+                <!-- /innerbodycontent -->
+                <!-- printfooter -->
+        <div class="printfooter">
+        Retrieved from "<a href="https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;oldid=5692">https://wiki.radxa.com/mw/index.php?title=Rockpi4/hardware/devtree_overlays&amp;oldid=5692</a>"        </div>
+        <!-- /printfooter -->
+                        <!-- catlinks -->
+        <div id="catlinks" class="catlinks catlinks-allhidden"></div>        <!-- /catlinks -->
+                        <div class="visualClear"></div>
+        <!-- debughtml -->
+                <!-- /debughtml -->
+      </div>
+      <!-- /bodyContent -->
+    </section>
+    <!-- /content -->
+
+      <!-- footer -->
+
+      <div id="footer" class="footer container-fluid custom-footer"><script type="text/javascript" src="device-tree-overlays_files/plusone.js" gapi_processed="true"></script>
+<div id="footer" class="footer container-fluid">
+	<div class="col-md-12">
+<div class="footer-links">
+    <div class="container">         
+<div class="footer-Title"></div>
+<div class="col-md-4 pull-left">
+<small>Copyright©2021 Radxa Limited | 瑞莎科技</small>
+</div>
+<div class="col-md-8 pull-right">
+<ul id="siteFooterMenu" class="siteFooterMenu">
+<li><a href="https://wiki.radxa.com/">Home</a></li>
+<li><a href="https://wiki.radxa.com/Buy">Buy</a></li>
+<li><a href="http://forum.radxa.com/">Forum</a></li>
+<li><a href="https://wiki.radxa.com/Rock/download">Download</a></li>
+<li><a href="https://wiki.radxa.com/Rock/FAQ">FAQs</a></li>
+<li><a href="https://wiki.radxa.com/Special:SpecialContact">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-md-12">
+<div class="text-center" style="margin-top:20px;">
+<a rel="license" href="https://creativecommons.org/licenses/by/3.0/"></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+</div>
+</div>
+    
+</div>
+    <script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"skins.bootstrapskin":"loading","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="device-tree-overlays_files/load_005.php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.BootStrapSkinSlideshow"],null,true);
+}</script>
+<script src="device-tree-overlays_files/load_002.php"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43717967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":49});
+}</script>
+  
+
+</div></div></div></div><div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><style></style></body></html>
